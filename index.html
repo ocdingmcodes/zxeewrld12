@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+          <script> 
+ document.addEventListener("contextmenu", function(e){ 
+ e.preventDefault(); 
+ }, false); 
+ document.addEventListener("keydown", function(e) { 
+
+ if (e.ctrlKey && e.shiftKey && e.keyCode == 73) { 
+ disabledEvent(e); 
+ } 
+ 
+ if (e.ctrlKey && e.shiftKey && e.keyCode == 74) { 
+ disabledEvent(e); 
+ } 
+  
+ if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) { 
+ disabledEvent(e); 
+ } 
+ 
+ if (e.ctrlKey && e.keyCode == 85) { 
+ disabledEvent(e); 
+ } 
+ 
+ if (event.keyCode == 123) { 
+ disabledEvent(e); 
+ } 
+
+ if (e.ctrlKey && event.keyCode == 67) { 
+ disabledEvent(e); 
+ } 
+ }, false); 
+ function disabledEvent(e){ 
+ if (e.stopPropagation){ 
+ e.stopPropagation(); 
+ } else if (window.event){ 
+ window.event.cancelBubble = true; 
+ } 
+ e.preventDefault(); 
+ return false; 
+ }</script> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="zee's world" />
+      <meta name="description" content="stay eezy. yeezy taught me." />
+        <meta
+      name="stay eezy. yeezy taught me."
+      content=""
+    />
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://i.pinimg.com/564x/1e/d5/da/1ed5da701bf3bb2637931feaf5e7d3af.jpg" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/sprinkle-cuvbn-pubp/css/styles.css">
+
+        <title>zee's world</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="https://www.instagram.com/xeeswrld/" target="_blank" class="nav__logo">
+                    <i class="ri-at-line nav__logo-icon"></i> scl
+                </a>
+
+               <!-- <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#personality" class="nav__link">Personality</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#qotd" class="nav__link">QOTD</a>
+                        </li>
+                     
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+             <!--   <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <!--<i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>-->
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+          
+                   <img src="https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/thumbnails%2F4777f201-30ab-483e-afba-2df6048696b3.image.png?1700680398697" alt="" class="home__img">
+
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Wrld <br>
+                        </h1>
+                       <h1 class="home__subtitle">
+                            xees<br>
+                        </h1>
+                        <p class="home__description">
+                           In this wrld, if it ain't zee then it aint cool. Go with my flow, flow with everything in life. Simplicity is key.
+                        </p>
+                        <!--<a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>-->
+                       <a href="https://linktr.ee/justaboynick" target="_blank" class="container-imb button--flex">
+                      
+                        <!--     <div class="container-imb">
+    <button class="image-button" onclick="handleButtonClick()">
+      <img src="https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/20c9ec3f-4c88-4974-85bb-d3c38da9d632.image.png?1700669060610" alt="Button Image">
+    </button>
+  </div>-->
+                          <div class="home__social">
+                    
+                     
+                  
+                             
+                            </a>
+                 
+     </div>
+                   
+                </div>
+          
+                   <div class="home__social">
+                      
+                        <div class="home__social-links">
+                            <!--<a href="https://www.instagram.com/cynnick" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>-->
+                         
+                        </div>
+                    </div>
+            </section>
+
+      <section class="sponsor section">
+                <div class="sponsor__container container grid">
+                    <a href="https://locket.camera/links/dGJDejex2ACaZSJv5" target="_blank" class="container-imb button--flex">
+                      
+                             <div class="container-imb">
+    <button class="image-button" onclick="handleButtonClick()">
+      <img src="https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/thumbnails%2F1a58cb96-5680-496c-bc19-79834a83aef6.image.png?1700661611940" alt="Button Image">
+    </button>
+  </div>
+                  
+                    
+                 <!--   <img src="https://i.pinimg.com/originals/0d/94/5d/0d945d4a1fdce3ef44b866c3ef58f9b9.jpg" alt="" class="sponsor__img" href="https://youtube.com">
+                    <img src= "https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/2ce4e04d3d82b75c3d58d47f32632218.jpg?v=1669480795972" alt="" class="sponsor__img">
+                    <img src="https://cdn.glitch.global/1dd1342c-3337-495d-bedc-81e56011f1c3/C219C3F2-691F-42A8-9723-A7BB6080ACED.jpeg?v=1668520143405" alt="" class="sponsor__img">
+                    <img src="https://cdn.glitch.global/1dd1342c-3337-495d-bedc-81e56011f1c3/7ED66693-523E-4662-87D7-F346CA0960AF.jpeg?v=1668522975378" alt="" class="sponsor__img">-->
+                </div>
+                       
+                            </a>
+                 
+            </section>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+                   
+      
+      
+      
+
+     
+
+
+
+      <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                   
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-fingerprint-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                   Why do I always code?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   It's my escape from life sometimes, other times financial and other fun
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-fingerprint-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Am I anti-social?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Sometimes. depends on da mood, place and typa ppl
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-fingerprint-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Which school do you go to?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Kingston College the worst prolly
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-fingerprint-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                   How old are you?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    15 soon
+                                </p>
+                            </div>
+                        </div>
+
+                      
+                       
+                    </div>
+                </div>
+            </section>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+
+              
+              
+              
+              
+              
+              
+              
+              
+            <!--==================== STEPS ====================-->
+        
+              
+              
+              
+              
+    <style>      
+        
+              .section__title-center{
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
+  line-height: 140%;
+ background: linear-gradient(to bottom, #ac9474, #f8ecdc 50%, #eee 75%, #333 75%);
+               
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.section__title-center{
+  text-align: center;
+}
+      </style>    
+              
+             <section class="product section container" id="personality">
+                <h2 class="section__title-center">
+                    Services
+                </h2>
+               
+               <style>
+  
+
+    #countdown {
+      font-size: 24px;
+      text-align: center;
+    }
+  </style>
+
+  <div id="countdown"></div>
+
+  <script>
+    // Function to calculate the time until the next Saturday
+    function calculateTimeUntilSaturday() {
+      const now = new Date();
+      const daysUntilSaturday = (7 - now.getDay() + 7) % 7; // 6 represents Saturday
+      const nextSaturday = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilSaturday, 0, 0, 0);
+      const timeUntilSaturday = nextSaturday - now;
+
+      return timeUntilSaturday;
+    }
+
+    // Function to update the countdown
+    function updateCountdown() {
+      const countdownElement = document.getElementById('countdown');
+      const timeUntilSaturday = calculateTimeUntilSaturday();
+
+      const days = Math.floor(timeUntilSaturday / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeUntilSaturday % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeUntilSaturday % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeUntilSaturday % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `ETA<br>${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+      // Update the countdown every second
+      setTimeout(updateCountdown, 1000);
+    }
+
+    // Initial call to start the countdown
+    updateCountdown();
+  </script>
+              </section>
+              
+           
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                 
+                    <div class="contact__box">
+                     
+                      
+                     
+
+                      <!-- <a href="https://www.youtube.com/watch?v=ooAmMKrYRHI&t=639s" target="_blank" class="footer__logo">
+                          
+                        <i class="ri-fullscreen-line footer__logo-icon"></i> ye24
+                    </a>-->
+                      
+                  
+                     
+                    </div>
+
+                    <!--<form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>-->
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                   
+
+                   <!-- <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+             
+               
+
+                <div class="footer__content">
+                   
+
+                   
+                </div>
+            </div>
+
+        </footer>-->
+        
+        <!--=============== SCROLL UP ===============-->
+       
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="/sprinkle-cuvbn-pubp/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="/sprinkle-cuvbn-pubp/js/main.js"></script>
+    </body>
+</html>
