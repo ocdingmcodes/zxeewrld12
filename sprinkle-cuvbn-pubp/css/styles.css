@@ -84,7 +84,7 @@ textarea{
 
 body{
   margin: var(--header-height) 0 0 0;
-  background-color: #f8f4dc;
+  background-color: #f4f4dc;
   color: var(--text-color);
   transition: .4s; /*For animation dark mode*/
 }
