@@ -83,7 +83,96 @@
           
           
           
-          
+             <style>        
+              .center {
+	display: grid;
+	place-content: center;
+	position: absolute;
+	inset: 0;
+}
+
+.iso {
+	--iso: scaleX(0.866025) rotateZ(30deg) skewX(150deg);
+
+	max-width: 45ch;
+	transform: var(--iso);
+}
+
+.btnb {
+	--size: 1em;
+	--magic: 0.866025;
+	--shift: translate(
+		calc(-1 * var(--size)),
+		calc(-1 * var(--size) * var(--magic))
+	);
+	position: relative;
+	font: inherit;
+	color: #eee;
+	background-color: #222;
+	border: none;
+	padding: 0;
+
+	transform: var(--shift);
+	transition: transform 400ms ease;
+}
+
+.content {
+	background-color: #222;
+	padding: 1em;
+}
+
+:is(.side, .front) {
+	position: absolute;
+	transition: transform 400ms ease;
+}
+
+.front {
+	inset: 0 calc(var(--size) * -2) 0 100%;
+	background-color: #262626;
+
+	transform-origin: center left;
+	transform: skewY(41.25deg) scaleX(0.5);
+	z-index: 1;
+}
+
+.side {
+	inset: 100% 0 calc(-2 * var(--size) * var(--magic)) 0;
+	background-color: #161616;
+
+	transform-origin: top center;
+	transform: skewX(49deg) scaleY(0.5);
+	z-index: 1;
+}
+
+.btnb:hover {
+	--shift: translate(
+		calc(-2 * var(--size)),
+		calc(-2 * var(--size) * var(--magic))
+	);
+}
+
+.btnb:active {
+	--shift: translate(0, 0);
+}
+
+.btnb:hover .front {
+	transform: skewY(41.25deg) scaleX(1);
+}
+
+.btnb:hover .side {
+	transform: skewX(49deg) scaleY(1);
+}
+
+.btnb:active .front {
+	transform: skewY(41.25deg) scaleX(0);
+}
+
+.btnb:active .side {
+	transform: skewX(49deg) scaleY(0);
+}
+          </style>
+              
+              
           
           
           
@@ -164,8 +253,7 @@
     <button class="image-button" onclick="handleButtonClick()">
       <img src="https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/6f73a128-d72b-4d9b-bbe0-d9d9862c1315.image.png?v=1700858459080" height="155" width="155"  alt="Button Image">
     </button>
-                      
-                              
+			 
                               
                                 <section class="iso product section container">
                         
@@ -492,96 +580,7 @@
               
 
               
-      <style>        
-              .center {
-	display: grid;
-	place-content: center;
-	position: absolute;
-	inset: 0;
-}
-
-.iso {
-	--iso: scaleX(0.866025) rotateZ(30deg) skewX(150deg);
-
-	max-width: 45ch;
-	transform: var(--iso);
-}
-
-.btnb {
-	--size: 1em;
-	--magic: 0.866025;
-	--shift: translate(
-		calc(-1 * var(--size)),
-		calc(-1 * var(--size) * var(--magic))
-	);
-	position: relative;
-	font: inherit;
-	color: #eee;
-	background-color: #222;
-	border: none;
-	padding: 0;
-
-	transform: var(--shift);
-	transition: transform 400ms ease;
-}
-
-.content {
-	background-color: #222;
-	padding: 1em;
-}
-
-:is(.side, .front) {
-	position: absolute;
-	transition: transform 400ms ease;
-}
-
-.front {
-	inset: 0 calc(var(--size) * -2) 0 100%;
-	background-color: #262626;
-
-	transform-origin: center left;
-	transform: skewY(41.25deg) scaleX(0.5);
-	z-index: 1;
-}
-
-.side {
-	inset: 100% 0 calc(-2 * var(--size) * var(--magic)) 0;
-	background-color: #161616;
-
-	transform-origin: top center;
-	transform: skewX(49deg) scaleY(0.5);
-	z-index: 1;
-}
-
-.btnb:hover {
-	--shift: translate(
-		calc(-2 * var(--size)),
-		calc(-2 * var(--size) * var(--magic))
-	);
-}
-
-.btnb:active {
-	--shift: translate(0, 0);
-}
-
-.btnb:hover .front {
-	transform: skewY(41.25deg) scaleX(1);
-}
-
-.btnb:hover .side {
-	transform: skewX(49deg) scaleY(1);
-}
-
-.btnb:active .front {
-	transform: skewY(41.25deg) scaleX(0);
-}
-
-.btnb:active .side {
-	transform: skewX(49deg) scaleY(0);
-}
-          </style>
-              
-              
+   
   
             <!--==================== STEPS ====================-->
         
