@@ -1,0 +1,263 @@
+  <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="zee's world" />
+      <meta name="description" content="my services" />
+        <meta
+      name="stay eezy. yeezy taught me."
+      content=""
+    />
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/3ece20ae-58c9-4bb8-8770-6320e81769c6.image.png?1700781091949" type="image/x-icon">
+
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+     
+  <!--=============== CSS ===============-->
+    
+        <title>zee's world - services</title>
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  background: #2b2823;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+  
+  /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .6rem;
+  background: transparent, 4%, 53%);
+}
+
+::-webkit-scrollbar-thumb{
+  background: transparent, 4%, 29%);
+  border-radius: .5rem;
+}
+
+
+img {
+  border-radius: 50%;
+  width: clamp(100px, 40vw, 120px);
+  height: clamp(100px, 40vw, 120px);
+  object-fit: cover;
+  object-position: top;
+}
+
+.circle-top {
+  width: clamp(25rem, 30vw, 31.25rem);
+  position: absolute;
+  top: 3em;
+  left: -8em;
+  height: clamp(25rem, 30vw, 31.25rem);
+  background: hsla(211, 100%, 28%, 1);
+
+  background: radial-gradient(
+    circle,
+    #2b2823 0%,
+    #00458e00 60%,
+    #ffffff00 100%
+  );
+
+   background: -moz-radial-gradient(
+    circle,
+    #00458f8f 0%,
+    #00458e00 60%,
+    #ffffff00 100%
+  );
+
+  background: -webkit-radial-radial-gradient(
+    circle,
+    #00458f8f 0%,
+    #00458e00 60%,
+    #ffffff00 100%
+  );
+
+  border-radius: 50%;
+}
+.circle-bottom {
+  width: clamp(25rem, 30vw, 31.25rem);
+  position: absolute;
+  bottom: -5em;
+  right: -8em;
+  height: clamp(25rem, 30vw, 31.25rem);
+  background: hsla(211, 100%, 28%, 1);
+
+  background: radial-gradient(
+    circle,
+    #00458f8f 0%,
+    #00458e00 65%,
+    #ffffff00 100%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    #2b2823 0%,
+    #2b2823 65%,
+    #ffffff00 100%
+  );
+
+  background: -webkit-radial-radial-gradient(
+    circle,
+    #00458f8f 0%,
+    #2b2823 65%,
+    #2b2823 100%
+  );
+
+  border-radius: 50%;
+}
+
+header {
+  background: linear-gradient(to top, #2b2823 0%, #2f3c4742 100%),
+    url("https://i.pinimg.com/564x/17/00/61/170061357ae9bc70c63846837dc1255c.jpg")
+      no-repeat 50% 50% / cover;
+  width: 100%;
+  min-height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+
+  .header-content {
+    width: min(37.5em, 90%);
+    margin-top: 5em;
+    position: relative;
+    z-index: 10;
+
+    span {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 0.063rem;
+      font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 1.375rem + 0.625vw, 2rem);
+      font-weight: 700;
+    }
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 75em;
+  margin-inline: auto;
+  gap: 0.938rem;
+  transform: translatey(-3em);
+  position: relative;
+  z-index: 10;
+
+  .card {
+    padding: 1.875em 1.25em;
+    max-width: 18.75rem;
+    width: 90%;
+    height: 16.875rem;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      z-index: -1;
+      border: 0.125rem solid transparent;
+      background: linear-gradient(45deg, transparent, transparent) border-box;
+      -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    h2 {
+      color: #fff;
+      letter-spacing: 0.05rem;
+      font-size: clamp(1rem, 0.9375rem + 0.3125vw, 1.25rem);
+      margin-top: 0.625em;
+      margin-bottom: 0.188em;
+    }
+
+    p {
+      color: #afafaf;
+      font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+    }
+
+    &-top {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 0.938rem;
+      flex-wrap: wrap;
+
+      .card {
+        img {
+          width: clamp(120px, 40vw, 150px);
+          height: clamp(120px, 40vw, 150px);
+        }
+      }
+    }
+  }
+}
+
+  h1,h2,h3, p{
+  color: white
+ 
+}
+</style>
+
+
+<div class="circle-top"></div>
+
+<header>
+  <div class="header-content">
+    <span>contact on gram</span>
+    <h1>Services</h1>
+  </div>
+</header>
+<section>
+  <div class="card-top">
+    <div class="card">
+  
+      <h3>Ethical Hacking</h3>
+      <p>coming Soon</p>
+    </div>
+    <div class="card">
+       <img src="https://cdn.glitch.global/6d8ff60f-4ec3-49e2-a4de-f798f903381b/6a4d0707-ead5-4399-a3ea-e3cf200e6d83.image.png?v=1700841931450" alt="sold out">
+      <h3>Social Media Growth</h3>
+      <p>coming soon</p>
+    </div>
+  </div>
+  <div class="card">
+   
+    <h3>Graphics Design</h3>
+    <p>coming soon</p>
+  </div>
+  <div class="card">
+  
+    <h3>Code Help</h3>
+    <p>coming soon</p>
+  </div>
+  
+</section>

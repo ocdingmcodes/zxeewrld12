@@ -507,26 +507,82 @@ background: #f4f4dc;
 
     @keyframes floatAnimation {
       0% {
-        transform: translateY(0);
+        transform: translateY(10px);
       }
       100% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
       }
     }
 
     /* Optional styling for better visibility */
     .image-button img {
    
-        width: 100px;
+        width: 200px;
+  border-radius: 30px;
+  justify-self: center;
+      height: auto;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .image-button:hover img {
+      transform: scale(1.1);
+    }
+
+
+
+
+    .image-button2 {
+      background: none;
+      border: none;
+      cursor: pointer;
+     
+    }
+
+
+    /* Optional styling for better visibility */
+    .image-button2 img {
+   
+        width: 200px;
+       bottom: -1;
   border-radius: 30px;
   justify-self: center;
       height: auto;
       transition: transform 0.3s ease-in-out;
     }
 
-    .image-button:hover img {
+    .image-button2:hover img {
       transform: scale(1.1);
     }
+
+
+
+
+
+    .image-button3 {
+      background: none;
+      border: none;
+      cursor: pointer;
+     
+    }
+
+
+    /* Optional styling for better visibility */
+    .image-button3 img {
+   
+        width: 200px;
+       bottom: -1;
+  border-radius: 30px;
+  justify-self: center;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-button3:hover img {
+      transform: scale(1.1);
+    }
+
+
+
 
  .container-imb {
       text-align: center;
